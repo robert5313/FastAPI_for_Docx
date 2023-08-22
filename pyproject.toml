@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "text-extractor"
+version = "0.1.0"
+description = ""
+authors = ["Mbatha-Marvin <mbathamarvin597@gmail.com>"]
+readme = "README.md"
+packages = [{include = "text_extractor"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<=3.12"
+fastapi = {extras = ["all"], version = "^0.101.1"}
+textract = "^1.6.5"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
